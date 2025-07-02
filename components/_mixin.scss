@@ -1,0 +1,7 @@
+@mixin displayFlex($gap:0,$ai:flex-start){
+ display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:$ai ;
+  gap: $gap;
+}

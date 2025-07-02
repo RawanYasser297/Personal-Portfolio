@@ -1,0 +1,53 @@
+@import "./mixin";
+
+/* projects */
+
+.projects{
+  grid-template-columns: 1fr;
+}
+
+.pro {
+ display: grid;
+ grid-template-columns: repeat(2,1fr);
+ gap: 5rem;
+ justify-items: center;
+}
+
+
+
+.pro__img {
+  width: fit-content;
+  height: 40rem;
+  box-shadow: 1px 0px 8px 0px #4e575f;
+}
+
+.one .pro__img{
+  justify-self: start;
+}
+
+.two .pro__img{
+  justify-self: end;
+}
+.pros_p {
+  height: fit-content;
+  font-size: var(--font-size-18);
+  font-weight: var(--font-weight-medium);
+}
+
+.pro__content {
+ @include displayFlex($gap:2rem)
+}
+
+.pros__link {
+  display: inline-block;
+  font-size: var(--font-size-16);
+  margin-right: 3rem;
+  color: var(--color-dark-blue);
+  font-weight: var(--font-weight-medium);
+}
+
+.link__arrow {
+  width: 1.5rem;
+  color: var(--color-dark-blue);
+}
+/* projects End */
