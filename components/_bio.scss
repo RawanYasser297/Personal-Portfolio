@@ -12,6 +12,10 @@ height: calc(100vh - 75px);
   font-size: var(--font-size-70);
   font-weight: var(--font-weight-semi-bold);
 }
+
+.mob{
+  display: none;
+}
 .bio__about__me {
   font-family: var(--font-family-poppins);
   font-weight: var(--font-weight-regular);
