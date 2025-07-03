@@ -56,6 +56,8 @@ body {
   top: 0px;
   left: 0;
   width: 100vw;
+  min-width: -webkit-fill-available; 
+  min-width: fit-content;
   height: 100vh;
   opacity: 0.09;
 }

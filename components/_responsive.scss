@@ -1,21 +1,20 @@
-
 /* responsive */
 @media (max-width: 1000px) {
   html {
     font-size: 8px;
   }
-
 }
 
 @media (max-width: 800px) {
-
-
-  
+  .bio__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
   .bio__photo__container {
     display: none;
   }
-  
 
   .section {
     row-gap: 8rem;
@@ -45,9 +44,9 @@
   .pro.two .pro__content {
     order: 2;
   }
-.two .pro__img{
-  justify-self: start;
-}
+  .two .pro__img {
+    justify-self: start;
+  }
   .clientsOpinion {
     font-size: var(--font-size-24);
   }
@@ -58,15 +57,14 @@
 }
 
 @media (max-width: 500px) {
-  
-  .pro{
+  .pro {
     grid-template-columns: 1fr;
   }
 
   .pro__img {
     width: fit-content;
     max-width: 100%;
-    
+    margin: 0 auto;
   }
   .nav-bar {
     display: flex;
@@ -83,7 +81,6 @@
   /* burger menu */
   .burger-menu {
     display: flex;
-    
   }
 
   .burger-menu input#checkbox-burger-menu {
@@ -127,15 +124,14 @@
   /* burger menu end*/
 
   /* mobile nav */
-  header:has(.burger-menu #checkbox-burger-menu:checked) .nav-bar{
-  top: 100%;
-
+  header:has(.burger-menu #checkbox-burger-menu:checked) .nav-bar {
+    top: 100%;
   }
   /* mobile nav end*/
 }
 
-@media (max-width:320){
-  .bio__h1{
+@media (max-width: 320) {
+  .bio__h1 {
     font-size: var(--font-size-38);
   }
 }
